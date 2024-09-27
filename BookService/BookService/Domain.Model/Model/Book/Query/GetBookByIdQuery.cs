@@ -1,5 +1,5 @@
-﻿using Common.Response;
-using Domain.Model.Model.Book.QueryModel;
+﻿using Domain.Model.Model.Book.QueryModel;
+using Framework.Response;
 using MediatR;
 
 namespace Domain.Model.Model.Book.Query;

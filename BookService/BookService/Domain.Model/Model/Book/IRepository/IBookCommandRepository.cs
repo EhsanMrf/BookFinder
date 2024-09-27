@@ -1,4 +1,4 @@
-﻿using Common.TransientService;
+﻿using Framework.TransientService;
 
 namespace Domain.Model.Model.Book.IRepository;
 

@@ -1,13 +1,12 @@
-﻿using Common.Interface;
-using Common.Validator;
+﻿using Common.Validator;
 using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Model.Model.Book;
 
-public class BookTitle : IObjectValue
+public class BookTitle
 {
     [MaxLength(70)]
-    public string Title { get; private set; }
+    public string Title { get; private set; } = null!;
 
     public static BookTitle CreateInstance(string title)=> new (title);
 

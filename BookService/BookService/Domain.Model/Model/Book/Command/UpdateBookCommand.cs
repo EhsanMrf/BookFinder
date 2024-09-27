@@ -1,4 +1,4 @@
-﻿using Common.Response;
+﻿using Framework.Response;
 using MediatR;
 
 namespace Domain.Model.Model.Book.Command;
