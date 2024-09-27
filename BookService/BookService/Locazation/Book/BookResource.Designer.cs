@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Infrastructure.Locazation.Book {
+namespace Locazation.Book {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Infrastructure.Locazation.Book {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Infrastructure.Locazation.Book.BookResource", typeof(BookResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Locazation.Book.BookResource", typeof(BookResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -20,13 +20,13 @@ public class AuthorQueryRepository(DatabaseContext dbContext) : IAuthorQueryRepo
         return await dbContext.Authors.Where(x => x.Id == id).AsTracking().FirstOrDefaultAsync();
     }
 
-    public async Task<IEnumerable<AuthorQueryModel>> GetList()
+    public async Task<IEnumerable<AuthorQueryModel>> GetList(CancellationToken cancellationToken)
     {
         return await dbContext.Authors.Select(x => new AuthorQueryModel
         {
             Id = x.Id,
             Name = x.Name
-        }).ToListAsync();
+        }).ToListAsync(cancellationToken);
     }
 
     public async Task<IEnumerable<AuthorBookQueryModel>> GetAuthorBooksById(Guid id)

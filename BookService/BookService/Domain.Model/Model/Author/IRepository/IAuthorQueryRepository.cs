@@ -8,7 +8,7 @@ public interface IAuthorQueryRepository : ITransientService
 {
     Task<AuthorQueryModel?> GetById(Guid id);
     Task<Author?> Load(Guid id);
-    Task<IEnumerable<AuthorQueryModel>> GetList();
+    Task<IEnumerable<AuthorQueryModel>> GetList(CancellationToken cancellationToken);
     Task<IEnumerable<AuthorBookQueryModel>> GetAuthorBooksById(Guid id);
     Task<Guid?> GetAuthorId(Guid id);
     Task<bool> HasRecordWithName(Guid id, string name);

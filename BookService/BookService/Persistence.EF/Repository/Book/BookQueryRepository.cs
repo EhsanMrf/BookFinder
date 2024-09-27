@@ -6,7 +6,7 @@ namespace Persistence.EF.Repository.Book;
 
 public class BookQueryRepository(DatabaseContext dbContext) : IBookQueryRepository
 {
-    public async Task<BookQueryModel?> GetById(Guid id)
+    public async Task<BookQueryModel?> GetById(Guid id, CancellationToken cancellationToken)
     {
         return await dbContext.Books.Where(x => x.Id == id).Select(s => new BookQueryModel
         {
@@ -14,15 +14,15 @@ public class BookQueryRepository(DatabaseContext dbContext) : IBookQueryReposito
             Id = s.Id,
             PublishYear = s.PublishYear,
             Title = s.BookTitle.Title
-        }).FirstOrDefaultAsync();
+        }).FirstOrDefaultAsync( cancellationToken);
     }
 
-    public async Task<Domain.Model.Model.Book.Book?> Load(Guid id)
+    public async Task<Domain.Model.Model.Book.Book?> Load(Guid id, CancellationToken cancellationToken)
     {
-        return await dbContext.Books.AsTracking().FirstOrDefaultAsync(x => x.Id == id);
+        return await dbContext.Books.AsTracking().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
-    public async Task<IEnumerable<BookQueryModel>> GetList()
+    public async Task<IEnumerable<BookQueryModel>> GetList(CancellationToken cancellationToken)
     {
         return await dbContext.Books.Select(s => new BookQueryModel
         {
@@ -30,6 +30,6 @@ public class BookQueryRepository(DatabaseContext dbContext) : IBookQueryReposito
             Id = s.Id,
             PublishYear = s.PublishYear,
             Title = s.BookTitle.Title
-        }).ToListAsync();
+        }).ToListAsync(cancellationToken);
     }
 }

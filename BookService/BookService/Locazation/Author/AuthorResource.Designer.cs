@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Infrastructure.Locazation.Author {
+namespace Locazation.Author {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Infrastructure.Locazation.Author {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Infrastructure.Locazation.Author.AuthorResource", typeof(AuthorResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Locazation.Author.AuthorResource", typeof(AuthorResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -93,6 +93,69 @@ namespace Infrastructure.Locazation.Author {
         public static string AuthorNoutFoundService {
             get {
                 return ResourceManager.GetString("AuthorNoutFoundService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نویسنده معتبر وارد کنید.
+        /// </summary>
+        public static string BookAuthorIdInvalid {
+            get {
+                return ResourceManager.GetString("BookAuthorIdInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to اطلاعات تکراری است.
+        /// </summary>
+        public static string BookDuplicate {
+            get {
+                return ResourceManager.GetString("BookDuplicate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to کتابی پیدا نشد.
+        /// </summary>
+        public static string BookNoutFoundService {
+            get {
+                return ResourceManager.GetString("BookNoutFoundService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to سال انتشار صحیح وارد نمایید.
+        /// </summary>
+        public static string BookPublishYear {
+            get {
+                return ResourceManager.GetString("BookPublishYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to آبجکت عنوان را تعریف کنید.
+        /// </summary>
+        public static string BookTitleInvalidObject {
+            get {
+                return ResourceManager.GetString("BookTitleInvalidObject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to کاراکتر عنوان کتاب باید بیشتر از دو باشد.
+        /// </summary>
+        public static string BookTitleLength {
+            get {
+                return ResourceManager.GetString("BookTitleLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to عنوان کتاب خالی است.
+        /// </summary>
+        public static string BookTitleNull {
+            get {
+                return ResourceManager.GetString("BookTitleNull", resourceCulture);
             }
         }
     }

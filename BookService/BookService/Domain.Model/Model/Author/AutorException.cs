@@ -1,5 +1,5 @@
 ﻿using Framework.Exception;
-using Infrastructure.Locazation.Author;
+using Locazation.Author;
 
 namespace Domain.Model.Model.Author;
 

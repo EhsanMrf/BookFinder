@@ -1,5 +1,5 @@
 ﻿using Framework.Exception;
-using Infrastructure.Locazation.Book;
+using Locazation.Book;
 
 namespace Domain.Model.Model.Book;
 

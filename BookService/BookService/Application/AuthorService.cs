@@ -36,7 +36,7 @@ public class AuthorService(IAuthorQueryRepository queryRepository, IAuthorComman
 
     public async Task<ServiceResponse<IEnumerable<AuthorQueryModel>>> Handle(GetAuthorsQuery request, CancellationToken cancellationToken)
     {
-        var authors = await queryRepository.GetList();
+        var authors = await queryRepository.GetList(cancellationToken);
         return authors.ReturnDataOrInstance();
     }
 

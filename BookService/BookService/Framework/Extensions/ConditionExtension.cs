@@ -23,4 +23,9 @@ public static class ConditionExtension
             StatusCode = 200,
         };
     }
+
+    public static void ThrowIfNull(this object o, ArgumentNullException exception)
+    {
+        if (o == null) throw exception;
+    }
 }
