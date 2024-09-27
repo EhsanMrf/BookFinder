@@ -1,9 +1,10 @@
 ﻿using Common.Validator;
+using Framework.Mark;
 using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Model.Model.Book;
 
-public class BookTitle
+public sealed class BookTitle : IObjectValue
 {
     [MaxLength(70)]
     public string Title { get; private set; } = null!;

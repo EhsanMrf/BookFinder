@@ -3,7 +3,7 @@ using Framework.Entity;
 
 namespace Domain.Model.Model.Author;
 
-public class Author :BaseEntity<Guid>
+public sealed class Author :BaseEntity<Guid>
 {
     public string Name { get; set; }
     public IReadOnlyList<Book.Book> Books { get; set; }

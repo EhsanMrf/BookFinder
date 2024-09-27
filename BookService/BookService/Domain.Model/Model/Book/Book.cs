@@ -3,7 +3,7 @@ using Framework.Entity;
 
 namespace Domain.Model.Model.Book;
 
-public class Book : BaseEntity<Guid>
+public sealed class Book : BaseEntity<Guid>
 {
 
     #region Peroperty
