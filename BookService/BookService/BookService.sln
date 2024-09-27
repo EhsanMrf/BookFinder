@@ -23,9 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locazation", "Locazation\Lo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceApplication", "ServiceApplication", "{CE18D099-BC15-47BE-917C-234A86DCDB17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{D26AC893-6281-4F5E-92AC-0E494F449252}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{D26AC893-6281-4F5E-92AC-0E494F449252}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Contract", "Application.Contract\Application.Contract.csproj", "{868E9321-3675-49E5-A37B-96594335778C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Contract", "Application.Contract\Application.Contract.csproj", "{868E9321-3675-49E5-A37B-96594335778C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceHost", "ServiceHost", "{C8EDFCA0-1D3E-4E82-B79A-F27FDBCF751F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{EDA7BB76-3ACC-41DD-827A-9FDEF0332477}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +65,10 @@ Global
 		{868E9321-3675-49E5-A37B-96594335778C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{868E9321-3675-49E5-A37B-96594335778C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{868E9321-3675-49E5-A37B-96594335778C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA7BB76-3ACC-41DD-827A-9FDEF0332477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA7BB76-3ACC-41DD-827A-9FDEF0332477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA7BB76-3ACC-41DD-827A-9FDEF0332477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA7BB76-3ACC-41DD-827A-9FDEF0332477}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +82,7 @@ Global
 		{3835653C-821D-4442-9DB7-5768DBE3CEA1} = {D207BC88-98E9-4744-9204-51C2F30A940C}
 		{D26AC893-6281-4F5E-92AC-0E494F449252} = {CE18D099-BC15-47BE-917C-234A86DCDB17}
 		{868E9321-3675-49E5-A37B-96594335778C} = {CE18D099-BC15-47BE-917C-234A86DCDB17}
+		{EDA7BB76-3ACC-41DD-827A-9FDEF0332477} = {C8EDFCA0-1D3E-4E82-B79A-F27FDBCF751F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F4A3D4E9-6FEE-4E47-845F-6539F4356889}
