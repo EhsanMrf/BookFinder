@@ -24,7 +24,7 @@ public static class ConditionExtension
         };
     }
 
-    public static void ThrowIfNull(this object o, ArgumentNullException exception)
+    public static void ThrowIfNull(this object o, ArgumentException exception)
     {
         if (o == null) throw exception;
     }
