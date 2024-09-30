@@ -1,7 +1,5 @@
 ﻿using Application.Contract;
 using Application.Exception;
-using Application.PublishEndPoint;
-using Domain.Model.Model.Author;
 using Domain.Model.Model.Author.IRepository;
 using Domain.Model.Model.Book;
 using Domain.Model.Model.Book.Command;

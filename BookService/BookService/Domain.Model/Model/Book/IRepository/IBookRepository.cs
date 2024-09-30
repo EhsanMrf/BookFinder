@@ -6,7 +6,7 @@ namespace Domain.Model.Model.Book.IRepository;
 
 public interface IBookQueryRepository : ITransientService
 {
-    Task<BookQueryModel?> GetById(Guid id,CancellationToken cancellationToken);
+    Task<BookQueryModel?> GetById(Guid id, CancellationToken cancellationToken);
     Task<Book?> Load(Guid id, CancellationToken cancellationToken);
     Task<IEnumerable<BookQueryModel>> GetList(CancellationToken cancellationToken);
 }
