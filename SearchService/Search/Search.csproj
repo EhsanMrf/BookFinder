@@ -7,11 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Elastic.Clients.Elasticsearch" Version="8.15.8" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.2.5" />
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
