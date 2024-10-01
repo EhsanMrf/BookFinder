@@ -25,7 +25,7 @@ namespace API.Controllers
             return await mediator.Send(new UpdateBookCommand(id, input.Title, input.PublishYear, input.AuthorId));
         }
 
-        [HttpGet]
+        [HttpGet("GetList")]
         public async Task<ServiceResponse<IEnumerable<BookQueryModel>>> GetList()
         {
             return await mediator.Send(new GetBooksQuery());
